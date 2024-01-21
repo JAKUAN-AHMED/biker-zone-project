@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font Poppins-->
+    <link rel="icon" href="images/icons/fav-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -51,7 +52,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-4xl">Biker Zone</a>
+                  <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal text-base px-1">
@@ -67,12 +68,12 @@
               </div>
         </nav>
         <!-- slider or carousel -->
-        <div class="carousel w-full bg-bike-primary-bg pl-0">
+        <div class="carousel lg:h-[550px] w-full bg-bike-primary-bg pl-0">
           <!-- slide 1 -->
           <div id="slide1" class="carousel-item relative w-full">
-            <div class="flex p-24">
-              <div class="space-y-7">
-                <h2 class="text-6xl font-bold">
+            <div class="flex flex-col lg:flex-row p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">
                   Ride-on R15 V4
                   <br>
                   with Smile
@@ -83,8 +84,8 @@
                 </p>
                 <button class="btn bg-bike-primary text-white">Purchase</button>
               </div>
-              <div>
-                <img src="images/slider/bike1.png" class="w-full" />
+              <div class="flex-1">
+                <img src="images/slider/bike1.png" class="w-[500px]"/>
               </div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -95,7 +96,24 @@
 
           <!-- slide-2 -->
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="images/slider/bike2.png" class="w-full" />
+            
+            <div class="flex flex-col lg:flex-row p-24">
+                  <div class="space-y-7 flex-1">
+                    <h2 class="text-2xl lg:text-6xl font-bold">
+                      Ride-on R15 V4
+                      <br>
+                      with Smile
+                    </h2>
+                    <p>
+                      Ride minimizes non-riding; it doesn't desert
+                      Cycling is an official commitment that brings joy and minimizes stress.
+                    </p>
+                    <button class="btn bg-bike-primary text-white">Purchase</button>
+                  </div>
+                  <div class="flex-1">
+                    <img src="images/slider/bike2.png" class="w-[500px]"/>
+                  </div>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a> 
               <a href="#slide3" class="btn btn-circle">❯</a>
@@ -105,7 +123,23 @@
           <!-- slide-3 -->
 
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="images/slider/bike3.png" class="w-full" />
+            <div class="flex flex-col lg:flex-row p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">
+                  Ride-on R15 V4
+                  <br>
+                  with Smile
+                </h2>
+                <p>
+                  Ride minimizes non-riding; it doesn't desert
+                  Cycling is an official commitment that brings joy and minimizes stress.
+                </p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+              </div>
+              <div class="flex-1">
+                <img src="images/slider/bike3.png" class="w-[500px]"/>
+              </div>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" class="btn btn-circle">❮</a> 
               <a href="#slide4" class="btn btn-circle">❯</a>
@@ -115,7 +149,23 @@
           <!-- slide-4 -->
 
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="images/slider/bike4.png" class="w-full" />
+            <div class="flex flex-col lg:flex-row p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class="text-2xl lg:text-6xl font-bold">
+                  Ride-on R15 V4
+                  <br>
+                  with Smile
+                </h2>
+                <p>
+                  Ride minimizes non-riding; it doesn't desert
+                  Cycling is an official commitment that brings joy and minimizes stress.
+                </p>
+                <button class="btn bg-bike-primary text-white">Purchase</button>
+              </div>
+              <div class="flex-1">
+                <img src="images/slider/bike4.png" class="w-[500px]"/>
+              </div>
+            </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle">❮</a> 
               <a href="#slide1" class="btn btn-circle">❯</a>
@@ -123,9 +173,64 @@
           </div>
         </div>
     </header>
-    
-    <main class="md:container md:mx-auto"> 
+    <!-- header end -->
 
+    <!-- main start -->
+    <main class="md:container md:mx-auto"> 
+      <!-- featured bike --> 
+      <section>
+          
+      </section>
+
+      <!-- latest bike -->
+      <section class="my-24">
+        <h3 class="text-4xl font-semibold text-center">Latest Bikes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- first card -->
+            <div class="card  bg-base-100 shadow-xl">
+              <figure><img src="images/others/latest1.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-3xl">Ducati XDIAVEL S-73!</h2>
+                <p>Execelent producst with new offer
+                  <br>
+                  Buy your first choice!
+                </p>
+                <div class="card-actions">
+                  <button class="btn hover:bg-yellow-400 text-white bg-bike-primary">Buy Now</button>
+                </div>
+              </div>
+          </div>
+
+          <!-- second card -->
+          <div class="card  bg-base-100 shadow-xl">
+            <figure><img src="images/others/latest2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-3xl">Motorcycles & Scooters</h2>
+              <p>Execelent producst with new offer
+                <br>
+                Buy your first choice!
+              </p>
+              <div class="card-actions">
+                <button class="btn hover:bg-yellow-400 text-white bg-bike-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!--third card  -->
+          <div class="card   bg-base-100 shadow-xl">
+              <figure><img src="images/others/latest3.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title text-3xl">2021 Honda CBR500R</h2>
+                <p>Execelent producst with new offer
+                  <br>
+                  Buy your first choice!
+                </p>
+                <div class="card-actions">
+                  <button class="btn hover:bg-yellow-400 text-white bg-bike-primary">Buy Now</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
